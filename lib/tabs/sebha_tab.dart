@@ -27,7 +27,7 @@ class _SebhaTabState extends State<SebhaTab> {
                   setState(() {});
                 },
                 child: RotationTransition(
-                    turns: AlwaysStoppedAnimation(90 / 360),
+                    turns: AlwaysStoppedAnimation(-80 / 360),
                     child: Image.asset(
                       'assets/images/sebha_body.png',
                       height: 320,
@@ -72,9 +72,9 @@ class _SebhaTabState extends State<SebhaTab> {
               }
             }
             index++;
-            RotationTransition(
+            /*  RotationTransition(
               turns: AlwaysStoppedAnimation(90 / 360),
-            );
+            );*/ //
           },
           child: Text('$txt'),
         ),
@@ -83,15 +83,3 @@ class _SebhaTabState extends State<SebhaTab> {
     );
   }
 }
-
-
-  
-
-  /* dynamic RotationTransition(turns, Image) {
-      AlwaysStoppedAnimation(-80 /360),
-    child: Image.asset(
-        'assets/images/sebha_body.png',
-        height: 320,
-        width: 232,);
-    setState(() {});*/ //
-
